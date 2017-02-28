@@ -26,12 +26,15 @@ public class AddingActivity extends AppCompatActivity {
         number2 = (EditText) findViewById(R.id.enter_number_2);
         addButton = (Button) findViewById((R.id.addButton));
         addedNumbers = (TextView) findViewById(R.id.addNumbers);
+
+        calculator = new Calculator();
     }
 
 //    methods
     public void onAddButtonClicked(View button) {
         int number = 1;
         int answer = calculator.addNumbers();
+        addedNumbers.setText(answer);
 
     }
 }
