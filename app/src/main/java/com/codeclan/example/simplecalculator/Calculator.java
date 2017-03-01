@@ -10,16 +10,15 @@ public class Calculator {
     Calculator calculator;
 
 
+
 //    constructor
     public Calculator() {
     }
 
 
 //    methods
-    public int addNumbers() {
-        int number = 1;
-        int total = number + number;
-        return total;
+    public int addNumbers(int number1, int number2) {
+        return number1 + number2;
 
     }
 }

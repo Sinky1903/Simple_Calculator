@@ -32,9 +32,9 @@ public class AddingActivity extends AppCompatActivity {
 
 //    methods
     public void onAddButtonClicked(View button) {
-        int number = 1;
-        int answer = calculator.addNumbers();
-        addedNumbers.setText(answer);
-
+        int num1 = Integer.parseInt( number1.getText().toString() );
+        int num2 = Integer.parseInt( number1.getText().toString() );
+        int answer = calculator.addNumbers(num1, num2);
+        addedNumbers.setText(Integer.toString(answer));
     }
 }
